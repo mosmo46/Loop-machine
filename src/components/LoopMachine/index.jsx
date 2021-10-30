@@ -5,15 +5,15 @@ import { PlayCircleOutlined, PauseOutlined } from "@ant-design/icons";
 import "./style.css";
 
 //icons
-import BassIcon from "../../helpers/icons/bass.png";
-import DrumIcon from "../../helpers/icons/drum.png";
+import FunkIcon from "../../helpers/icons/funk.png";
 import ElectricGuitarIcon from "../../helpers/icons/electric-guitar.png";
-import PianoIcon from "../../helpers/icons/grand-piano.png";
-import GuitarIcon from "../../helpers/icons/guitar.png";
 import DrumInstrumentIcon from "../../helpers/icons/music-instrument.png";
-import TablasIcon from "../../helpers/icons/tablas.png";
-import TromboneIcon from "../../helpers/icons/trombone.png";
-import XylophoneIcon from "../../helpers/icons/xylophone.png";
+import Organ from "../../helpers/icons/organ.png";
+import Guitar_electric from "../../helpers/icons/guitar-electric-electricguitar.png";
+import Node from "../../helpers/icons/node.png";
+import DrumSet from "../../helpers/icons/drum-set.png";
+import Cymbals from "../../helpers/icons/cymbals.png";
+import Darboka from "../../helpers/icons/darboka.png";
 
 //sound
 import Sound1 from "../../helpers/sounds/1.mp3";
@@ -26,10 +26,12 @@ import Sound7 from "../../helpers/sounds/7.mp3";
 import Sound8 from "../../helpers/sounds/8.mp3";
 import Sound9 from "../../helpers/sounds/9.mp3";
 
+//image
+import Headphones from "../../helpers/icons/headphones.png";
 const LoopMachine = () => {
   const [pads, setPads] = useState([
     {
-      icon: BassIcon,
+      icon: FunkIcon,
       path: Sound1,
       isActive: false,
       shouldPlay: false,
@@ -39,7 +41,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: DrumIcon,
+      icon: DrumInstrumentIcon,
       path: Sound2,
       isActive: false,
       shouldPlay: false,
@@ -59,7 +61,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: PianoIcon,
+      icon:Guitar_electric,
       path: Sound4,
       isActive: false,
       shouldPlay: false,
@@ -69,7 +71,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: GuitarIcon,
+      icon: DrumSet,
       path: Sound5,
       isActive: false,
       shouldPlay: false,
@@ -79,7 +81,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: DrumInstrumentIcon,
+      icon: Darboka,
       path: Sound6,
       isActive: false,
       shouldPlay: false,
@@ -89,7 +91,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: TablasIcon,
+      icon: Node,
       path: Sound7,
       isActive: false,
       shouldPlay: false,
@@ -99,7 +101,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: TromboneIcon,
+      icon: Cymbals,
       path: Sound8,
       isActive: false,
       shouldPlay: false,
@@ -109,7 +111,7 @@ const LoopMachine = () => {
       },
     },
     {
-      icon: XylophoneIcon,
+      icon:Organ ,
       path: Sound9,
       isActive: false,
       shouldPlay: false,
@@ -155,14 +157,10 @@ const LoopMachine = () => {
 
   return (
     <>
-      <div className="container">
-        {pads.map((pad) => (
-          <Pad {...pad} />
-        ))}
-      </div>
-      <div className="stop-and-play-btn">
+      <div className="loop-machine-container">
+        <div className="stop-and-play-btn">
           <div>
-            <Button  className="btnPS" onClick={onPlayClick}>
+            <Button className="btnPS" onClick={onPlayClick}>
               <PlayCircleOutlined />
             </Button>
           </div>
@@ -172,6 +170,13 @@ const LoopMachine = () => {
             </Button>
           </div>
         </div>
+        <img className="headphones" src={Headphones} alt="headphones" />
+        <div className="container">
+          {pads.map((pad) => (
+            <Pad {...pad} />
+          ))}
+        </div>
+      </div>
     </>
   );
 };

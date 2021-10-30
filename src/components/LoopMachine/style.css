@@ -9,3 +9,10 @@
   border: 3px solid black;
   margin: 10px;
 }
+
+.headphones {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}

@@ -20,7 +20,8 @@ const Pad = ({key,icon ,path, isActive,onPadClick,shouldPlay }) => {
 	return (
 		<div className="pad-container">
 			<Button icon={<img src={icon} alt="icon"/>} className={`ant-btn ${activeClass}`} onClick={() => onPadClick(key)}>
-	        </Button>
+	        
+			</Button>
 		</div>
 	);
 }

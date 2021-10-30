@@ -1,7 +1,7 @@
-.container-app{
-    background-image: url(./photoBg.jpg);
-background-repeat:no-repeat;
-background-size: cover;
-width: 100vw;
-height: 100vh;
+.container-app {
+  background-image: url(./istockphoto-626684442-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
