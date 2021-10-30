@@ -1,0 +1,27 @@
+.container {
+  display: inline-grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 3px;
+}
+.ant-btn {
+  border-radius: 50px;
+  display: grid;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+}
+
+.pad-container .active {
+  background-color: green;
+  border: 3px rgb(9, 85, 25) solid;
+  background-color: #fff;
+  box-shadow:
+    0 0 5px 5px rgb(120, 187, 65),
+    0 0 5px 10px rgb(51, 206, 51),
+    0 0 5px 5px green;
+}
+
+.pad-container .not-active {
+  background-color: red;
+  border: 3px rgb(134, 23, 23) solid;
+}

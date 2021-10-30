@@ -1,0 +1,11 @@
+.stop-and-play-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 180%;
+}
+
+.btnPS {
+  border: 3px solid black;
+  margin: 10px;
+}
