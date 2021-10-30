@@ -1,4 +1,4 @@
-To download and run the project, 2 commands must be executed:
+clone and run the project:
 
 npm i
 
